@@ -1,0 +1,69 @@
+@media (min-width: 320px) and (max-width:575px) {
+    .nav_logo_creative {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    nav ul li {
+        margin-top: 15px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    nav .nav_btn{
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+
+    #banner{
+        padding-top: 0px;
+        padding-bottom: 50px;
+        }
+
+    #banner h1 {
+        margin-top: 30px;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .banner__image{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #service{
+        margin-top: 33px;
+    }
+    .service_item{
+        padding: 20px 15px;
+        border-radius: 30px;
+   }
+   .service_item h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 30px;
+}
+.service_item p{
+    width: auto;
+}
+.title h2 {
+    font-size: 30px;
+    text-align: start;
+}
+.title p {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: start;
+}
+#portfolio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+}
+
+
+
+    

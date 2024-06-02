@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --primary: #5956E8;
+    --black: #181818;
+    --white: #FFFEFE;
+    --70black: #181818;
+    --borderclr: #E3E3E3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+}
+
+.title{
+    text-align: center;
+}
+.title h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+}
+.title p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: rgb(24, 24, 24, 0.70);
+    width: 542px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* ================================== Nav Start =================================== */
+
+.nav_logo_creative{
+    margin-top: 34px;
+    margin-bottom: 51px;
+}
+
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+nav ul li a:hover{
+    color: var(--primary);
+}
+
+nav .nav_btn{
+    background-color: var(--primary);
+    padding: 13px 24px;
+    border-radius: 10px;
+}
+nav .nav_btn:hover{
+    background-color: var(--primary);
+}
+
+/* ================================== Nav End =================================== */
+
+
+
+/* <!-- ================================= Banner Start =========================== --> */
+#banner{
+background-color: var(--primary);
+padding-top: 165px;
+padding-bottom: 200px;
+}
+/* .d-flex{
+    padding-top: 165px;
+    padding-bottom: 200px;
+} */
+#banner h1{
+    font-size: 65px;
+    line-height: 80px;
+    font-weight: 700;
+    color: var(--white);
+}
+#banner p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.banner_btn{
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 13px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;    
+}
+.banner_btn:hover{
+    /* border: solid 1px black;
+    background-color: var(--white);
+    color: var(--primary); */
+
+    background: #000;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: 600;
+    padding-right: 100px;
+    border: solid 1px rgba(255, 255, 255, 0.455);
+}
+
+/* <!-- ================================ Banner end =============================== --> */
+
+
+
+
+
+
+.service__tivbvctle__h2{
+    font-size: 15px;
+}
+    
+
+/* <!-- ============================================= Services Start ============================================================ --> */
+
+#service{
+    margin-top: 83px;
+}
+.service_main{
+    margin-top: 50px;
+}
+.service_row{
+
+row-gap: 30px;
+}
+.service_item{
+     padding: 63px 48px;
+     border: solid 1px var(--borderclr);
+     border-radius: 10px;
+}
+.service_item:hover{
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,1);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,1);
+    transition: 0.4s;
+}
+.service_item h5{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 30px;
+}
+.service_item p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color:  var(--70black);
+    margin-top: 20px; 
+    width: 274px;
+}
+
+/* <!-- ============================================= Services End ============================================================ --> */
+
+
+
+
+
+/* <!-- ============================================= Portfolio Start ============================================================ --> */
+#portfolio{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.portfolio_item{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio_item .overley{
+    height: 113px;
+    width: 230px;
+    background:var(--primary);
+    position: absolute;
+    bottom: -100%; 
+    /* "overley" div  ke hide korar jonno Bottom: -100%  niche namiye dewa hoise 
+    & "portfolio_item" div theke "overlay" div ta k {overflow: hidden;} use kore hide kora hoise */
+    /* (.portfolio_item:hover .overley) te bottom: 19px use kora hoise. oikhane hover korle bottom theke 19px position a show korbe abr */
+
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.portfolio_item .overley h4{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 25px;
+}
+.portfolio_item .overley a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: var(--white);
+    margin-top: 10px;
+}
+.portfolio_item .overley a i{
+    margin-left: 10px;
+}
+.portfolio_item:hover .overley{
+    bottom: 19px;
+    transition: 0.4s;
+}
+.portfolio_row{
+    row-gap: 30px;
+    margin-top: 50px;
+}
+            
+/* <!-- ============================================= Portfolio End ============================================================ --> */
+
+
+
+
+
+/* <!-- ============================================= Team_Member Start ============================================================ --> */
+
+/* #team{
+    padding-bottom: 50px;
+} */
+
+.row_team{
+    margin-top: 50px;
+}
+
+.team_item{
+    position: relative;
+    overflow: hidden;
+}
+.team_item img{
+    width: 100%;
+}
+
+.team_item .overlay{
+    height: 444px;
+    width: 370px;
+    background: linear-gradient(0deg, #5956e8, rgba(255,254,254,0), rgba(255,254,254,0) );
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.team_item .overlay h4{
+    margin-top: 356px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.team_item .overlay h6{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight:300;
+    color: #FFFFFF;
+    margin-top: -5px;
+}
+
+/* <!-- ============================================= Team_Member End ============================================================ --> */
+
+
+
+
+/* <!-- ============================================= Customer start ============================================================ --> */
+#customer{
+    margin-top: 142px;
+    margin-bottom: 142px;
+}
+
+
+.customer_title h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.customer_title p{
+font-size: 16px;
+line-height: 27px;
+font-weight: 400;
+color: rgb(24, 24, 24, 0.70);
+width: 542px;
+margin-bottom: 50px;
+margin-bottom: 15px;
+}
+
+.customer_item{
+    padding: 48px 48px;
+    border: solid 1px var(--borderclr);
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.customer_item .quote_icon{
+    position: absolute;
+    bottom: 31px;
+    right: 24px;
+}
+
+.customer_item i{
+    margin-top: 30px;
+    color: gold;
+    margin-right: 7px;
+    margin-bottom: 20px;
+}
+.customer_item p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color:  var(--70black);
+    width: 274px;
+}
+.customer_item h3{
+    font-size: 20px;
+	line-height: 27px;
+    font-weight: 600;
+    color: var(--black);
+
+}
+
+.customer_item h6{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #5D5D5D;
+}
+/* <!-- ============================================= Customer End ============================================================ --> */
+
+
+
+
+/* <!-- ============================================= News Start ============================================================ --> */
+.row_news{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.news_item{
+    /* padding: 17px 19px; 
+    padding-bottom: 50px; */
+    padding: 17px 19px 50px 19px;
+    border: solid 1px var(--borderclr);
+    border-radius: 10px;
+}
+/* .news_item_body{
+    margin-left: 15px;
+} */
+.news_icon{
+    color: #5D5D5D;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 300;
+    margin-top: 19px;
+}
+.news_item i{
+    margin-right: 4px;
+}
+.news_item .calender {
+    margin-left: 30px;
+}
+.news_item h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #181818;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.news_item p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #5D5D5D;
+    margin-bottom: 10px;
+}
+.news_item a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5956E8;
+}
+
+/* <!-- ============================================= News End ============================================================ --> */
+
+
+
+
+/* <!-- ============================================= Footer Start ============================================================ --> */
+footer{
+    height: 441px;
+    width: 100%;
+    background: rgb(89, 86, 232, .10);
+}
+
+.footer_item_row{
+    padding-top: 100px;
+    /* justify-content: space-between; */
+}
+
+
+.footer_item_info p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #5D5D5D;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+.footer_item_info i{
+    margin-right: 30px;
+    font-size: 35px;
+}
+
+.footer_item h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 15px;
+}
+
+
+.footer_item ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer_item ul li{
+    list-style: none;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #5D5D5D;
+}
+
+
+/* <!-- ============================================= Footer End ============================================================ --> */
